@@ -1,18 +1,157 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --clr-main: #5c605c;
+  --clr-main-light: #dddcdd;
 }
 
+.container {
+  max-width: 1140px;
+  padding-inline: 1.5rem;
+  margin: 0 auto;
+}
 
-.navBarCustom{
-  background: rgb(255, 255, 255)
+.main-title {
+  margin-top: 2rem;
+}
+.logoNav {
+  width: 150px;
+  height: 100px;
+}
+.logoNav2 {
+  width: 150px;
+  height: 150px;
+}
+
+.navbar {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-main);
+  border-bottom: 1px solid black;
+}
+
+.logo {
+  text-decoration: none;
+  color: black;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding-block: 2rem;
+  min-width: width 200px;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.producto > div {
+  padding: 1rem;
+  background-color: var(--clr-main-light);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.producto > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.producto .ver-mas {
+  text-decoration: none;
+  background-color: var(--clr-main);
+  color: rgb(246, 246, 246);
+  padding: 0.5rem;
+  width: max-content;
+  border-radius: 0.5rem;
+  transition: 0.2s;
+}
+
+.producto .ver-mas:hover {
+  background-color: black;
+  color: white;
+}
+
+.producto-detalle {
+  padding-block: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.producto-detalle img {
+  width: 100%;
+}
+
+.producto-detalle-info h3 {
+  font-size: 2rem;
+}
+
+.button {
+  display: inline-block;
+
+  text-decoration: none;
+  background-color: var(--clr-main);
+  color: rgb(246, 246, 246);
+  padding: 0.1rem;
+  margin: 0.3rem;
+  width: 5rem;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+.button2 {
+  text-decoration: none;
+  background-color: var(--clr-main);
+  color: rgb(246, 246, 246);
+  padding: 0.1rem;
+  margin: 0.3rem;
+  width: 11.5rem;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.categoria {
+  font-size: 0.8rem;
+  color: #424242;
+  margin-top: 1rem;
+}
+
+.precio {
+  font-size: 2rem;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+.number {
+  display: inline-block;
 }

@@ -1,49 +1,46 @@
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-router-dom";
+import logo from "./../../assets/comahueStore.png";
+import logo2 from "./../../assets/Authorized.png";
 import CartWidget from "../cartWidget/CartWidget";
-import Logo from '../cartWidget/assets/logo.JPG'
+function ColorSchemesExample() {
+  return (
+    <>
+      <Navbar bg="dark" variant="dark">
+        <Container>
+          <Link to="/">
+            <img src={logo} className="logoNav" />
+          </Link>
+          <Nav className="me-auto mx-auto">
+            <Link className="menu-link" to="/category/iphone">
+              Iphone
+            </Link>
+            <Link className="menu-link" to="/category/mac">
+              Mac
+            </Link>
+            <Link className="menu-link" to="/category/ipad">
+              Ipad
+            </Link>
+            <Link className="menu-link" to="/category/watch">
+              Watch
+            </Link>
 
-const NavBar = () => {
-    return (
-        // <nav>
-        //     <h3>ECOMMERCE Psicomahue</h3>
-        //     <div>
-        //         <button>Cursos</button>
-        //         <button>Capacitaciones</button>
-        //         <button>Psicotecnicos</button>
-        //     </div>
-        //     <CartWidget />
-        // </nav>
+            <Link className="menu-link" to="/category/airpods">
+              AirPods
+            </Link>
+          </Nav>
 
-        <nav class="navBarCustom navbar navbar-expand-lg ">
-  <div class="container-fluid ">
-    <a class="navbar-brand mx-5" href="/#">
-      <img width="250px" height="auto" className="img-responsive" src={Logo}  alt="logo" />
-  
-    </a>
-    
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon">
-      </span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active " aria-current="page" href="/#">Cursos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/#">Capacitaciones</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/#" >Psicotecnicos</a>
-        </li>
-      </ul>
-    </div>
-    <div class="px-5">
-    <CartWidget />
-    </div>
-    
-  
-  </div>
-</nav>
-    )
+          <img src={logo2} className="logoNav2" />
+
+          <Link>
+            <CartWidget />
+          </Link>
+        </Container>
+      </Navbar>
+    </>
+  );
 }
-export default NavBar
+
+export default ColorSchemesExample;
