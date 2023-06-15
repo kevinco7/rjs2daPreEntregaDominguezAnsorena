@@ -18,6 +18,7 @@ const products = [
     imagen: cardImage2,
     categoria: "mac",
     precio: 1500,
+    stock: 10,
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ const products = [
     categoria: "mac",
     imagen: cardImage,
     precio: 2200,
+    stock: 10,
   },
   {
     id: 3,
@@ -45,6 +47,7 @@ const products = [
     categoria: "iphone",
     imagen: cardImage4,
     precio: 1400,
+    stock: 10,
   },
   {
     id: 5,
@@ -54,6 +57,7 @@ const products = [
     categoria: "iphone",
     imagen: cardImage5,
     precio: 1000,
+    stock: 10,
   },
   {
     id: 6,
@@ -63,6 +67,7 @@ const products = [
     categoria: "ipad",
     imagen: cardImage6,
     precio: 1500,
+    stock: 10,
   },
   {
     id: 7,
@@ -72,6 +77,7 @@ const products = [
     categoria: "ipad",
     imagen: cardImage7,
     precio: 1100,
+    stock: 10,
   },
   {
     id: 8,
@@ -81,6 +87,7 @@ const products = [
     categoria: "watch",
     imagen: cardImage9,
     precio: 550,
+    stock: 10,
   },
   {
     id: 9,
@@ -90,6 +97,7 @@ const products = [
     categoria: "watch",
     imagen: cardImage10,
     precio: 900,
+    stock: 10,
   },
   {
     id: 10,
@@ -99,6 +107,7 @@ const products = [
     categoria: "airpods",
     imagen: cardImage8,
     precio: 600,
+    stock: 10,
   },
 ];
 

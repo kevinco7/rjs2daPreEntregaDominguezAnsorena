@@ -10,31 +10,51 @@ function ColorSchemesExample() {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Link to="/">
-            <img src={logo} className="logoNav" />
-          </Link>
+          <li>
+            {" "}
+            <Link to="/">
+              <img src={logo} className="logoNav" />
+            </Link>{" "}
+          </li>
           <Nav className="me-auto mx-auto">
-            <Link className="menu-link" to="/category/iphone">
-              Iphone
-            </Link>
-            <Link className="menu-link" to="/category/mac">
-              Mac
-            </Link>
-            <Link className="menu-link" to="/category/ipad">
-              Ipad
-            </Link>
-            <Link className="menu-link" to="/category/watch">
-              Watch
-            </Link>
+            <li>
+              {" "}
+              <Link className="menu-link" to="/category/iphone">
+                Iphone
+              </Link>{" "}
+            </li>
+            <li>
+              {" "}
+              <Link className="menu-link" to="/category/mac">
+                Mac
+              </Link>{" "}
+            </li>
+            <li>
+              {" "}
+              <Link className="menu-link" to="/category/ipad">
+                Ipad
+              </Link>{" "}
+            </li>
+            <li>
+              {" "}
+              <Link className="menu-link" to="/category/watch">
+                Watch
+              </Link>{" "}
+            </li>
 
-            <Link className="menu-link" to="/category/airpods">
-              AirPods
-            </Link>
+            <li>
+              {" "}
+              <Link className="menu-link" to="/category/airpods">
+                AirPods
+              </Link>{" "}
+            </li>
+      
           </Nav>
 
           <img src={logo2} className="logoNav2" />
 
           <Link>
+              <Link className="menu-link" to="/carrito"></Link>{" "}
             <CartWidget />
           </Link>
         </Container>
