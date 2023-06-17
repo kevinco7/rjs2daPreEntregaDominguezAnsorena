@@ -97,6 +97,14 @@
   border-radius: 0.5rem;
   transition: 0.2s;
 }
+.botonCarrito {
+  text-decoration: none;
+  background-color: var(--clr-main);
+  color: rgb(246, 246, 246);
+  padding: 10px;
+  border-radius: 8px;
+  
+}
 
 .producto .ver-mas:hover {
   background-color: black;

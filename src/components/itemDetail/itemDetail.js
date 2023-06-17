@@ -35,7 +35,7 @@ const ItemDetail = ({ item }) => {
           <h3 className="titulo">{item.titulo}</h3>
           <p className="descripcion">{item.descripcion}</p>
           <p className="precio">${item.precio}</p>
-          <ItemCount className="ver-mas"  cantidad={cantidad} increment={increment} decrement={decrement} addItem={()=>{agregarAlCarrito(item,cantidad) }}
+          <ItemCount className="ver-mas" cantidad={cantidad} increment={increment} decrement={decrement} addItem={()=>{agregarAlCarrito(item,cantidad) }}
             // stock={10}
             // onAdd={(cantidad) => console.log("Cantidad agregada", cantidad)}
           />
